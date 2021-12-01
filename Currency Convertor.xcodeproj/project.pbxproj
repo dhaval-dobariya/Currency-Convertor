@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F51CC97272CF4910060E43F /* MCCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CC96272CF4910060E43F /* MCCFont.swift */; };
+		7F51CC9B272D18ED0060E43F /* MCCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CC9A272D18ED0060E43F /* MCCButton.swift */; };
+		7F51CC9D272D1B210060E43F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CC9C272D1B210060E43F /* UIColor+Extensions.swift */; };
+		7F51CC9F272D239F0060E43F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CC9E272D239F0060E43F /* UIView+Extensions.swift */; };
+		7F51CCA1272D4F500060E43F /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCA0272D4F500060E43F /* ServiceManager.swift */; };
+		7F51CCA3272D52010060E43F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCA2272D52010060E43F /* Constants.swift */; };
+		7F51CCA5272D54550060E43F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCA4272D54550060E43F /* Reachability.swift */; };
+		7F51CCA7272D55EF0060E43F /* MCCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCA6272D55EF0060E43F /* MCCManager.swift */; };
+		7F51CCA9272D58F20060E43F /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCA8272D58F20060E43F /* CurrencyRates.swift */; };
+		7F51CCAC272D59EC0060E43F /* CurrencyRatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCAB272D59EC0060E43F /* CurrencyRatesManager.swift */; };
+		7F51CCAE272D5FF90060E43F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51CCAD272D5FF90060E43F /* Utilities.swift */; };
+		7F52FE10272C2A9F008C8CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52FE0F272C2A9F008C8CB9 /* AppDelegate.swift */; };
+		7F52FE12272C2A9F008C8CB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52FE11272C2A9F008C8CB9 /* SceneDelegate.swift */; };
+		7F52FE14272C2A9F008C8CB9 /* CurrencyConvertorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52FE13272C2A9F008C8CB9 /* CurrencyConvertorViewController.swift */; };
+		7F52FE17272C2A9F008C8CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE15272C2A9F008C8CB9 /* Main.storyboard */; };
+		7F52FE19272C2AA6008C8CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE18272C2AA6008C8CB9 /* Assets.xcassets */; };
+		7F52FE1C272C2AA6008C8CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE1A272C2AA6008C8CB9 /* LaunchScreen.storyboard */; };
+		7F52FE37272C3493008C8CB9 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE26272C3493008C8CB9 /* DMSans-Regular.ttf */; };
+		7F52FE38272C3493008C8CB9 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE27272C3493008C8CB9 /* DMSans-Medium.ttf */; };
+		7F52FE39272C3493008C8CB9 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE28272C3493008C8CB9 /* DMSans-Bold.ttf */; };
+		7F52FE3A272C3493008C8CB9 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE29272C3493008C8CB9 /* DMSans-BoldItalic.ttf */; };
+		7F52FE3B272C3493008C8CB9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE2A272C3493008C8CB9 /* OFL.txt */; };
+		7F52FE3C272C3493008C8CB9 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE2B272C3493008C8CB9 /* DMSans-MediumItalic.ttf */; };
+		7F52FE3D272C3493008C8CB9 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE2C272C3493008C8CB9 /* DMSans-Italic.ttf */; };
+		7F52FE3E272C3493008C8CB9 /* CarosSoftHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE2E272C3493008C8CB9 /* CarosSoftHeavy.otf */; };
+		7F52FE3F272C3493008C8CB9 /* CarosSoft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE2F272C3493008C8CB9 /* CarosSoft.otf */; };
+		7F52FE40272C3493008C8CB9 /* CarosSoftMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE30272C3493008C8CB9 /* CarosSoftMedium.otf */; };
+		7F52FE41272C3493008C8CB9 /* CarosSoftLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE31272C3493008C8CB9 /* CarosSoftLight.otf */; };
+		7F52FE42272C3493008C8CB9 /* CarosSoftBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE32272C3493008C8CB9 /* CarosSoftBlack.otf */; };
+		7F52FE43272C3493008C8CB9 /* CarosSoftBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE33272C3493008C8CB9 /* CarosSoftBold.otf */; };
+		7F52FE44272C3493008C8CB9 /* CarosSoftExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE34272C3493008C8CB9 /* CarosSoftExtraBold.otf */; };
+		7F52FE45272C3493008C8CB9 /* CarosSoftExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE35272C3493008C8CB9 /* CarosSoftExtraLight.otf */; };
+		7F52FE46272C3493008C8CB9 /* CarosSoftThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F52FE36272C3493008C8CB9 /* CarosSoftThin.otf */; };
+		7FACE55A272FB60D0024A6F8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FACE559272FB60D0024A6F8 /* String+Extensions.swift */; };
+		7FB9ABB0272F89E400418187 /* CurrencyConvertorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9ABAF272F89E400418187 /* CurrencyConvertorViewModel.swift */; };
+		82AE6FBD620CF8E41405C159 /* Pods_Manta_Currency_Convertor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E61B672CBA6ABB0D61F6350 /* Pods_Manta_Currency_Convertor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4620B49DB43C620388DBC036 /* Pods-Manta Currency Convertor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manta Currency Convertor.release.xcconfig"; path = "Target Support Files/Pods-Manta Currency Convertor/Pods-Manta Currency Convertor.release.xcconfig"; sourceTree = "<group>"; };
+		4A410205A798AD9898688B90 /* Pods-Manta Currency Convertor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manta Currency Convertor.debug.xcconfig"; path = "Target Support Files/Pods-Manta Currency Convertor/Pods-Manta Currency Convertor.debug.xcconfig"; sourceTree = "<group>"; };
+		7F51CC96272CF4910060E43F /* MCCFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCFont.swift; sourceTree = "<group>"; };
+		7F51CC9A272D18ED0060E43F /* MCCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCButton.swift; sourceTree = "<group>"; };
+		7F51CC9C272D1B210060E43F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7F51CC9E272D239F0060E43F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		7F51CCA0272D4F500060E43F /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		7F51CCA2272D52010060E43F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F51CCA4272D54550060E43F /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7F51CCA6272D55EF0060E43F /* MCCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCManager.swift; sourceTree = "<group>"; };
+		7F51CCA8272D58F20060E43F /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		7F51CCAB272D59EC0060E43F /* CurrencyRatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesManager.swift; sourceTree = "<group>"; };
+		7F51CCAD272D5FF90060E43F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7F52FE0C272C2A9F008C8CB9 /* Currency Convertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Convertor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F52FE0F272C2A9F008C8CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F52FE11272C2A9F008C8CB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F52FE13272C2A9F008C8CB9 /* CurrencyConvertorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertorViewController.swift; sourceTree = "<group>"; };
+		7F52FE16272C2A9F008C8CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F52FE18272C2AA6008C8CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F52FE1B272C2AA6008C8CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F52FE1D272C2AA6008C8CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F52FE26272C3493008C8CB9 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		7F52FE27272C3493008C8CB9 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		7F52FE28272C3493008C8CB9 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		7F52FE29272C3493008C8CB9 /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7F52FE2A272C3493008C8CB9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		7F52FE2B272C3493008C8CB9 /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7F52FE2C272C3493008C8CB9 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
+		7F52FE2E272C3493008C8CB9 /* CarosSoftHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftHeavy.otf; sourceTree = "<group>"; };
+		7F52FE2F272C3493008C8CB9 /* CarosSoft.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoft.otf; sourceTree = "<group>"; };
+		7F52FE30272C3493008C8CB9 /* CarosSoftMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftMedium.otf; sourceTree = "<group>"; };
+		7F52FE31272C3493008C8CB9 /* CarosSoftLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftLight.otf; sourceTree = "<group>"; };
+		7F52FE32272C3493008C8CB9 /* CarosSoftBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftBlack.otf; sourceTree = "<group>"; };
+		7F52FE33272C3493008C8CB9 /* CarosSoftBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftBold.otf; sourceTree = "<group>"; };
+		7F52FE34272C3493008C8CB9 /* CarosSoftExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftExtraBold.otf; sourceTree = "<group>"; };
+		7F52FE35272C3493008C8CB9 /* CarosSoftExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftExtraLight.otf; sourceTree = "<group>"; };
+		7F52FE36272C3493008C8CB9 /* CarosSoftThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarosSoftThin.otf; sourceTree = "<group>"; };
+		7FACE559272FB60D0024A6F8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7FB9ABAF272F89E400418187 /* CurrencyConvertorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertorViewModel.swift; sourceTree = "<group>"; };
+		7FD1E0062757911A00EAD82E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		8E61B672CBA6ABB0D61F6350 /* Pods_Manta_Currency_Convertor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manta_Currency_Convertor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F52FE09272C2A9F008C8CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AE6FBD620CF8E41405C159 /* Pods_Manta_Currency_Convertor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		229A9F8105EAE170846EB36B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A410205A798AD9898688B90 /* Pods-Manta Currency Convertor.debug.xcconfig */,
+				4620B49DB43C620388DBC036 /* Pods-Manta Currency Convertor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		579C9B9D08D602EFCF78BBC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E61B672CBA6ABB0D61F6350 /* Pods_Manta_Currency_Convertor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F3911B6272C5CAB0005A936 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE13272C2A9F008C8CB9 /* CurrencyConvertorViewController.swift */,
+				7F52FE15272C2A9F008C8CB9 /* Main.storyboard */,
+				7F52FE1A272C2AA6008C8CB9 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F51CC8F272CEDE10060E43F /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE0F272C2A9F008C8CB9 /* AppDelegate.swift */,
+				7F52FE11272C2A9F008C8CB9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		7F51CC90272CEDFB0060E43F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F51CC95272CF44C0060E43F /* Extensions */,
+				7F51CC9A272D18ED0060E43F /* MCCButton.swift */,
+				7F51CCA0272D4F500060E43F /* ServiceManager.swift */,
+				7F51CCA2272D52010060E43F /* Constants.swift */,
+				7F51CCA4272D54550060E43F /* Reachability.swift */,
+				7F51CCAD272D5FF90060E43F /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F51CC91272CEE070060E43F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F51CCA8272D58F20060E43F /* CurrencyRates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F51CC92272CEE100060E43F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7FB9ABAF272F89E400418187 /* CurrencyConvertorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7F51CC95272CF44C0060E43F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F51CC96272CF4910060E43F /* MCCFont.swift */,
+				7F51CC9C272D1B210060E43F /* UIColor+Extensions.swift */,
+				7F51CC9E272D239F0060E43F /* UIView+Extensions.swift */,
+				7FACE559272FB60D0024A6F8 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F51CCAA272D59530060E43F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7F51CCA6272D55EF0060E43F /* MCCManager.swift */,
+				7F51CCAB272D59EC0060E43F /* CurrencyRatesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7F52FE03272C2A9F008C8CB9 = {
+			isa = PBXGroup;
+			children = (
+				7FD1E0062757911A00EAD82E /* readme.md */,
+				7F52FE0E272C2A9F008C8CB9 /* Currency Convertor */,
+				7F52FE0D272C2A9F008C8CB9 /* Products */,
+				229A9F8105EAE170846EB36B /* Pods */,
+				579C9B9D08D602EFCF78BBC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F52FE0D272C2A9F008C8CB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE0C272C2A9F008C8CB9 /* Currency Convertor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F52FE0E272C2A9F008C8CB9 /* Currency Convertor */ = {
+			isa = PBXGroup;
+			children = (
+				7F51CC8F272CEDE10060E43F /* AppDelegates */,
+				7F51CCAA272D59530060E43F /* Managers */,
+				7F51CC91272CEE070060E43F /* Models */,
+				7F3911B6272C5CAB0005A936 /* Views */,
+				7F51CC92272CEE100060E43F /* ViewModels */,
+				7F51CC90272CEDFB0060E43F /* Helpers */,
+				7F52FE23272C3464008C8CB9 /* Resources */,
+				7FD1E0072757AEBD00EAD82E /* SupportingFiles */,
+			);
+			path = "Currency Convertor";
+			sourceTree = "<group>";
+		};
+		7F52FE23272C3464008C8CB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE24272C3472008C8CB9 /* Fonts */,
+				7F52FE18272C2AA6008C8CB9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F52FE24272C3472008C8CB9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE2D272C3493008C8CB9 /* Caros_Soft */,
+				7F52FE25272C3493008C8CB9 /* DM_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F52FE25272C3493008C8CB9 /* DM_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE26272C3493008C8CB9 /* DMSans-Regular.ttf */,
+				7F52FE27272C3493008C8CB9 /* DMSans-Medium.ttf */,
+				7F52FE28272C3493008C8CB9 /* DMSans-Bold.ttf */,
+				7F52FE29272C3493008C8CB9 /* DMSans-BoldItalic.ttf */,
+				7F52FE2A272C3493008C8CB9 /* OFL.txt */,
+				7F52FE2B272C3493008C8CB9 /* DMSans-MediumItalic.ttf */,
+				7F52FE2C272C3493008C8CB9 /* DMSans-Italic.ttf */,
+			);
+			path = DM_Sans;
+			sourceTree = "<group>";
+		};
+		7F52FE2D272C3493008C8CB9 /* Caros_Soft */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE2E272C3493008C8CB9 /* CarosSoftHeavy.otf */,
+				7F52FE2F272C3493008C8CB9 /* CarosSoft.otf */,
+				7F52FE30272C3493008C8CB9 /* CarosSoftMedium.otf */,
+				7F52FE31272C3493008C8CB9 /* CarosSoftLight.otf */,
+				7F52FE32272C3493008C8CB9 /* CarosSoftBlack.otf */,
+				7F52FE33272C3493008C8CB9 /* CarosSoftBold.otf */,
+				7F52FE34272C3493008C8CB9 /* CarosSoftExtraBold.otf */,
+				7F52FE35272C3493008C8CB9 /* CarosSoftExtraLight.otf */,
+				7F52FE36272C3493008C8CB9 /* CarosSoftThin.otf */,
+			);
+			path = Caros_Soft;
+			sourceTree = "<group>";
+		};
+		7FD1E0072757AEBD00EAD82E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7F52FE1D272C2AA6008C8CB9 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F52FE0B272C2A9F008C8CB9 /* Currency Convertor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F52FE20272C2AA6008C8CB9 /* Build configuration list for PBXNativeTarget "Currency Convertor" */;
+			buildPhases = (
+				02E5F4AD43CF43D20534FABE /* [CP] Check Pods Manifest.lock */,
+				7F52FE08272C2A9F008C8CB9 /* Sources */,
+				7F52FE09272C2A9F008C8CB9 /* Frameworks */,
+				7F52FE0A272C2A9F008C8CB9 /* Resources */,
+				294F2BDDC8CC16C56F7C42B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Currency Convertor";
+			productName = "Manta Currency Convertor";
+			productReference = 7F52FE0C272C2A9F008C8CB9 /* Currency Convertor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F52FE04272C2A9F008C8CB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7F52FE0B272C2A9F008C8CB9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7F52FE07272C2A9F008C8CB9 /* Build configuration list for PBXProject "Currency Convertor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F52FE03272C2A9F008C8CB9;
+			productRefGroup = 7F52FE0D272C2A9F008C8CB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F52FE0B272C2A9F008C8CB9 /* Currency Convertor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F52FE0A272C2A9F008C8CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F52FE38272C3493008C8CB9 /* DMSans-Medium.ttf in Resources */,
+				7F52FE46272C3493008C8CB9 /* CarosSoftThin.otf in Resources */,
+				7F52FE39272C3493008C8CB9 /* DMSans-Bold.ttf in Resources */,
+				7F52FE3D272C3493008C8CB9 /* DMSans-Italic.ttf in Resources */,
+				7F52FE41272C3493008C8CB9 /* CarosSoftLight.otf in Resources */,
+				7F52FE3A272C3493008C8CB9 /* DMSans-BoldItalic.ttf in Resources */,
+				7F52FE42272C3493008C8CB9 /* CarosSoftBlack.otf in Resources */,
+				7F52FE45272C3493008C8CB9 /* CarosSoftExtraLight.otf in Resources */,
+				7F52FE40272C3493008C8CB9 /* CarosSoftMedium.otf in Resources */,
+				7F52FE3F272C3493008C8CB9 /* CarosSoft.otf in Resources */,
+				7F52FE3E272C3493008C8CB9 /* CarosSoftHeavy.otf in Resources */,
+				7F52FE3C272C3493008C8CB9 /* DMSans-MediumItalic.ttf in Resources */,
+				7F52FE1C272C2AA6008C8CB9 /* LaunchScreen.storyboard in Resources */,
+				7F52FE19272C2AA6008C8CB9 /* Assets.xcassets in Resources */,
+				7F52FE17272C2A9F008C8CB9 /* Main.storyboard in Resources */,
+				7F52FE44272C3493008C8CB9 /* CarosSoftExtraBold.otf in Resources */,
+				7F52FE43272C3493008C8CB9 /* CarosSoftBold.otf in Resources */,
+				7F52FE3B272C3493008C8CB9 /* OFL.txt in Resources */,
+				7F52FE37272C3493008C8CB9 /* DMSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E5F4AD43CF43D20534FABE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Manta Currency Convertor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294F2BDDC8CC16C56F7C42B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manta Currency Convertor/Pods-Manta Currency Convertor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manta Currency Convertor/Pods-Manta Currency Convertor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Manta Currency Convertor/Pods-Manta Currency Convertor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F52FE08272C2A9F008C8CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F51CCA9272D58F20060E43F /* CurrencyRates.swift in Sources */,
+				7F51CC9F272D239F0060E43F /* UIView+Extensions.swift in Sources */,
+				7F51CCAE272D5FF90060E43F /* Utilities.swift in Sources */,
+				7F52FE14272C2A9F008C8CB9 /* CurrencyConvertorViewController.swift in Sources */,
+				7FACE55A272FB60D0024A6F8 /* String+Extensions.swift in Sources */,
+				7F52FE10272C2A9F008C8CB9 /* AppDelegate.swift in Sources */,
+				7F51CCA1272D4F500060E43F /* ServiceManager.swift in Sources */,
+				7F51CC9D272D1B210060E43F /* UIColor+Extensions.swift in Sources */,
+				7F51CC9B272D18ED0060E43F /* MCCButton.swift in Sources */,
+				7F51CC97272CF4910060E43F /* MCCFont.swift in Sources */,
+				7F51CCA7272D55EF0060E43F /* MCCManager.swift in Sources */,
+				7F52FE12272C2A9F008C8CB9 /* SceneDelegate.swift in Sources */,
+				7FB9ABB0272F89E400418187 /* CurrencyConvertorViewModel.swift in Sources */,
+				7F51CCA5272D54550060E43F /* Reachability.swift in Sources */,
+				7F51CCAC272D59EC0060E43F /* CurrencyRatesManager.swift in Sources */,
+				7F51CCA3272D52010060E43F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F52FE15272C2A9F008C8CB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F52FE16272C2A9F008C8CB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F52FE1A272C2AA6008C8CB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F52FE1B272C2AA6008C8CB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F52FE1E272C2AA6008C8CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F52FE1F272C2AA6008C8CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F52FE21272C2AA6008C8CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A410205A798AD9898688B90 /* Pods-Manta Currency Convertor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Currency Convertor/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Currency-Convertor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F52FE22272C2AA6008C8CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4620B49DB43C620388DBC036 /* Pods-Manta Currency Convertor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Currency Convertor/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Currency-Convertor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F52FE07272C2A9F008C8CB9 /* Build configuration list for PBXProject "Currency Convertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F52FE1E272C2AA6008C8CB9 /* Debug */,
+				7F52FE1F272C2AA6008C8CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F52FE20272C2AA6008C8CB9 /* Build configuration list for PBXNativeTarget "Currency Convertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F52FE21272C2AA6008C8CB9 /* Debug */,
+				7F52FE22272C2AA6008C8CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F52FE04272C2A9F008C8CB9 /* Project object */;
+}
